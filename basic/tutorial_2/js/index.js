@@ -12,6 +12,28 @@ var marker = L.marker([25.033964, 121.564468]).addTo(map)
     .bindPopup('這裡是台北 101!')
     //.openPopup();
 
+    var marker2 = L.marker([25.026632206262597, 121.52739790405337]).addTo(map)
+    .bindPopup('這裡是師大!')
+    //.openPopup();
+
+    var marker3 = L.marker([25.008314587492467, 121.53697329623708]).addTo(map)
+    .bindPopup('這裡是師大分部!')
+    //.openPopup();
+
 marker.on('click', function () {
     alert('你點擊了 Marker！這裡是台北 101 的位置。');
+
+    
+});
+
+marker2.on('click', function () {
+    alert('你點擊了 Marker！這裡是師大的位置。');
+
+    
+});
+
+marker3.on('click', function () {
+    alert('你點擊了 Marker！這裡是師大分部的位置。');
+
+    
 });
