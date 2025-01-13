@@ -1,0 +1,86 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>結果</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="./js/qrcode.js"></script>
+    </head>
+    <body>
+        恭喜您完成任務!
+
+        <BR>
+        
+        <div id="qrcode"></div>
+
+        <!-- <div id="imgDiv">
+            <img src="./images/centerImg2.jpg">
+        </div> -->
+        
+        <button id="returnHomeButton" onclick="goPage()">返回首頁</button>
+        <!-- <button class="myButton">點擊我 2</button> -->
+
+        <script>
+            var qrcode = new QRCode("qrcode", {
+                text: "ntnu",
+                width: 256,
+                height: 256,
+                colorDark : "#000000",
+                colorLight : "#ffffff",
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        </script>
+        
+    </body>
+</html>
+
+
+
+
+
+
+<!-- <script>
+            // JavaScript 內嵌在這裡
+            // 宣告變數
+        let name = "Alice"; // 可以更改
+        const age = 25;     // 不可更改
+        var city = "Taipei"; // 可更改 (舊方式)
+
+        name = "Daniel";
+
+        // 顯示在控制台
+        console.log("Name:", name);
+        console.log("Age:", age);
+        console.log("City:", city);
+
+        name = "May";
+        console.log("name", name)
+
+        greet("Mary");
+        greet("name");
+        greet("Jerromy");
+
+        function sayHI(a, b, c, d) {
+
+            return "HI," 
+            CONSOLE.LOG("HI," + a + " " +b + " " +c + " " +d + "!"
+    
+            )
+
+
+
+        function gopage() {
+window.location.href = "https://www.ladygaga.com/"
+}
+
+
+
+
+        function greet(who) {
+    console.log("HI," + who + "! ")
+}
+
+</script> -->
+	</body>
+
+</html>
