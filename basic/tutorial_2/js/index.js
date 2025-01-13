@@ -21,19 +21,29 @@ var marker = L.marker([25.033964, 121.564468]).addTo(map)
     //.openPopup();
 
 marker.on('click', function () {
+    console.log("Click 1");
+    infoDiv.textcontent("101介紹");
     alert('你點擊了 Marker！這裡是台北 101 的位置。');
-
-    
+    map.panTo([25.033964, 121.564468]); // 平移到台北 101
 });
+
+
 
 marker2.on('click', function () {
+    console.log("Click 2");
     alert('你點擊了 Marker！這裡是師大的位置。');
+    map.panTo([25.02628220891764, 121.52756985187678]); // 平移到台北 101
+});
 
     
-});
 
 marker3.on('click', function () {
+    console.log("Click 3");
     alert('你點擊了 Marker！這裡是師大分部的位置。');
-
-    
+    map.panTo([25.008314587492467, 121.53697329623708]); // 平移到台北 101
 });
+
+
+function goPage(){
+    window.location.href = "https://mira-ar.n010.app/show/Xxa0Tm";
+}
